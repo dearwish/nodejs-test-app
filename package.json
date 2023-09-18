@@ -1,23 +1,29 @@
 {
-  "name": "nodejstestapp",
+  "name": "nodejs-test-app",
   "version": "1.0.0",
-  "description": "Node.Js Test App",
+  "description": "Node.js Test App",
   "main": "test_app.js",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "http-proxy": "^1.18.1",
+    "npm-run-all": "^4.1.5"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node test_app.js",
+    "start:ssl": "node https.js",
+    "start:https": "run-p start start:ssl",
+    "start:websocket": "node test_websockets.js",
+    "start:puppeteer": "node test_puppeteer.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wnpower/NodeJS-TestApp.git"
+    "url": "git+https://github.com/dearwish/nodejs-test-app.git"
   },
-  "author": "imorandinwnp",
-  "license": "ISC",
+  "author": "dearwish",
+  "license": "WTF",
   "bugs": {
-    "url": "https://github.com/wnpower/NodeJS-TestApp/issues"
+    "url": "https://github.com/dearwish/nodejs-test-app/issues"
   },
-  "homepage": "https://github.com/wnpower/NodeJS-TestApp#readme"
+  "homepage": "https://github.com/dearwish/nodejs-test-app#readme"
 }
