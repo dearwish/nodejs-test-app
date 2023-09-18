@@ -1,21 +1,27 @@
 # NodeJS-TestApp
-Aplicaciones de prueba en Node.js
+Test application for Node.js
 
 ## App simple Node.js
 	cd ~
 	git clone https://github.com/wnpower/NodeJS-TestApp.git
 	cd NodeJS-TestApp
 	npm install
-	node test_app.js
-## App Node.js con Websockets
+	npm start
+## App simple Node.js with HTTPS proxy
+	cd ~
+	git clone https://github.com/wnpower/NodeJS-TestApp.git
+	cd NodeJS-TestApp
+	npm install
+	npm run start:https
+## App Node.js with Websockets
 	cd ~
 	git clone https://github.com/wnpower/NodeJS-TestApp.git
 	cd NodeJS-TestApp
 	npm install ws
-	node test_websockets.js
-## App Node.js con Puppeteer
+	npm run start:websocket
+## App Node.js with Puppeteer
 	cd ~
 	git clone https://github.com/wnpower/NodeJS-TestApp.git
 	cd NodeJS-TestApp
 	npm install puppeteer
-	node test_puppeteer.js
+	npm run start:puppeteer
