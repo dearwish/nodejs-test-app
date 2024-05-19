@@ -11,4 +11,6 @@ httpProxy.createServer({
         key,
         cert
     }
-}).listen(1111);
+}).listen(3000);
+
+console.log('Https proxy is listening on 3000');
